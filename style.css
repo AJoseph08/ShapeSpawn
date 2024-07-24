@@ -1,0 +1,83 @@
+/* Container styles */
+.container {
+    width: 600px;
+    height: 300px;
+    border: 2px solid red;
+    position: relative;
+    margin: 20px auto;
+}
+
+/* Square shape (Spawn Point) */
+.square {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color: #163AF2;
+    border: 5px solid #163AF2;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Oval shape */
+.oval {
+    width: 60px;
+    height: 50px;
+    background-color: #ff9999;
+    border-radius: 50%;
+    position: absolute;
+    top: 230px;
+    left: 95px;
+    cursor: pointer; /* Make the oval clickable */
+}
+
+/* Triangle shape */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid #99ccff;
+    position: absolute;
+    transform: translate(-50%, -50%); /* Centering */
+}
+
+/* Can shape */
+.can {
+    width: 40px;
+    height: 80px;
+    background-color: #ffcc66;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%); /* Centering */
+}
+
+/* Cube shape */
+.cube {
+    width: 50px;
+    height: 40px;
+    background-color: #ccccff;
+    position: absolute;
+    box-shadow: 10px 10px 0px 0px #aaa;
+    transform: translate(-50%, -50%); /* Centering */
+}
+
+/* Rounded Rectangular Callout shape */
+.rounded-rect-callout {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #ff66cc;
+    border-radius: 30px;
+    clip-path: polygon(10% 0%, 90% 0%, 90% 70%, 75% 70%, 75% 100%, 25% 70%, 10% 70%);
+    transform: translate(-50%, -50%); /* Centering */
+}
+
+/* Hidden class to hide shapes initially */
+.hidden {
+    display: none;
+}
